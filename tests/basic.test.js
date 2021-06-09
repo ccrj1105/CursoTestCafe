@@ -54,6 +54,32 @@ test('My first test cafe test', async t => {
     await t.resizeWindow(800, 600)
 
 
+    //asert in testcafe
+
+    //deep equal
+    await t.expect('foo').eql('foo', 'message', options)
+    //not deep equal
+    await t.expect('foo').notEqll('foo', 'message', options)
+    //ok
+    await t.expect(false).ok()
+    //not ok
+    await t.expect(true).notOk()
+    //contains
+    await t.expect("foo").contains("o")
+    //not contains
+    await t.expect('foo').notContains('hey')
+    //greater or less than
+    await t.expect(10).gt(5)
+    await t.expect(10).gte(10)
+    await t.expect(10).lt(10)
+    await t.expect(10).lte(10)
+//within
+await t.expect(10).within(1,100)
+//not within
+await t.expect(10).notWithin(1,100)
+
+
+
 })
 
 /*test.only('My first test cafe test', async t => {
