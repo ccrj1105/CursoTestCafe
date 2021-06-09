@@ -10,6 +10,7 @@ fixture `Getting started with testcafe`
 }).beforeEach(async t =>{
     //Run before each test
     await t.setTestSpeed(1)
+    //await test.timeouts(0)
 
 }).after(async t =>{
     //cleaning test data
@@ -30,5 +31,5 @@ test('My first test cafe test', async t =>{
     //await t.wait(3000)
     await t.click(submit_button)
     //compare text of a webelement
-    await t.expect(articleText).contains('Cristian C')
+    await t.expect(articleText).contains('Cristian')
 })
