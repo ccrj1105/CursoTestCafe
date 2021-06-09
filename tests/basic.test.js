@@ -32,6 +32,28 @@ test('My first test cafe test', async t => {
     await t.click(submit_button)
     //compare text of a webelement
     await t.expect(articleText).contains('Cristian')
+    //Click
+    await t.click('selector', { options })
+    // double click
+    await t.doubleClick('selector', { options })
+    //right click
+    await t.rightClick('selector', { options })
+    //drag element
+    await t.drag('selector', { options })
+    //hover
+    await t.hover('selector', { options })
+    //select text
+    await t.selectText('selector')
+    //type text
+    await t.typeText('selector', 'text')
+    //press key on keyboard
+    await t.pressKey('key')
+    //navigate
+    await t.navigateTo('url')
+    //resize window
+    await t.resizeWindow(800, 600)
+
+
 })
 
 /*test.only('My first test cafe test', async t => {
