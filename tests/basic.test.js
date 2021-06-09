@@ -9,6 +9,8 @@ fixture `Getting started with testcafe`
     //await sendTestData()
 }).beforeEach(async t =>{
     //Run before each test
+    await t.setTestSpeed(1)
+
 }).after(async t =>{
     //cleaning test data
     // logging and seding data to monitoring systems
