@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test:chrome": "testcafe chrome ./tests -s takeOnFails=true --disable-page-caching",
+    "test:chrome:5": "testcafe -c 5 chrome ./tests -s takeOnfails=true",
     "test:safari": "testcafe safari ./tests -s takeOnFails=true --disable-page-caching",
     "test:firefox": "testcafe firefox ./tests -s takeOnFails=true --disable-page-caching",
     "test:chrome:headless": "testcafe chrome:headless ./tests -s takeOnFails=true --disable-page-caching",
-    "test:chrome:mobile": "testcafe chrome:emulation:device=iphone X ./tests -s takeOnFails=true --disable-page-caching"
+    "test:chrome:mobile": "testcafe chrome:emulation:device=iphone X ./tests -s takeOnFails=true --disable-page-caching",
+    "test:multiple": "testcafe chrome,safari ./tests -s takeOnfail=true"
   },
   "repository": {
     "type": "git",
@@ -27,5 +29,8 @@
   "homepage": "https://github.com/ccrj1105/CursoTestCafe#readme",
   "dependencies": {
     "testcafe": "^1.14.2"
+  },
+  "devDependencies": {
+    "xpath-to-css": "^1.0.5"
   }
 }

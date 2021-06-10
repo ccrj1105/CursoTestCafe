@@ -1,4 +1,5 @@
 import { t, Selector } from 'testcafe'
+import xPathTocss from 'xpath-to-css'
 
 
 const loginForm = Selector('body > center > div > form')
@@ -8,6 +9,9 @@ const userInput = Selector('input[type=text]')
 const passInput = Selector('input').withAttribute('name', 'password')
 const loginButton = Selector('.button')
 const booksForm = Selector('#available')
+//xpath
+const xpath= `'//div'`
+const css = xPathTocss(xpath)
 
 
 export async function login(username, password) {
