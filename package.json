@@ -10,7 +10,10 @@
     "test:firefox": "testcafe firefox ./tests -s takeOnFails=true --disable-page-caching",
     "test:chrome:headless": "testcafe chrome:headless ./tests -s takeOnFails=true --disable-page-caching",
     "test:chrome:mobile": "testcafe chrome:emulation:device=iphone X ./tests -s takeOnFails=true --disable-page-caching",
-    "test:multiple": "testcafe chrome,safari ./tests -s takeOnfail=true"
+    "test:multiple": "testcafe chrome,safari ./tests -s takeOnfail=true",
+    "test:pageObject:chrome": "testcafe chrome ./test-page-object -s takeOnfail=true --skip-js-errors"
+
+    
   },
   "repository": {
     "type": "git",
