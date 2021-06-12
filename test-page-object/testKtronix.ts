@@ -11,6 +11,6 @@ test('user in ktronix page',async t =>{
     //await t.click(navbar.searchBtn)
 
     navbar.searchProduct('iphone')
-    searchResultPage.resultTittle
+    searchResultPage.validateTittle
 
 })

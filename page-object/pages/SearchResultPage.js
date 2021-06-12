@@ -5,8 +5,8 @@ class SearchResultPage {
         this.resultTittle = Selector('h1').innerText
     }
 
-    async validateTitle(){
-t.expect(this.resultTittle).contains('Celulares y Smartphones')
+    async validateTitle() {
+        await t.expect(this.resultTittle).contains('Celulares y Smartphones')
     }
 
 }
